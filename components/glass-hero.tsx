@@ -18,7 +18,7 @@ const NAV_LINKS = [
   { label: "About", href: "#about" },
   { label: "Work", href: "#work" },
   { label: "Process", href: "#process" },
-  { label: "Experiments", href: "#experiments" },
+  { label: "Vidhara", href: "#mainframe" },
 ];
 
 function Monogram() {

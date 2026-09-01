@@ -8,6 +8,29 @@
   --grid-line-soft: rgba(21, 42, 74, 0.06);
   --pill-bg: #ffffff;
   --ease-glass: cubic-bezier(0.16, 1, 0.3, 1);
+  --font-heading: 'HelveticaNowDisplay-Medium', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'HelveticaNowDisplayW01-Rg', 'Helvetica Neue', Arial, sans-serif;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
+.font-mainframe-heading {
+  font-family: var(--font-heading);
+}
+
+.font-mainframe-body {
+  font-family: var(--font-body);
 }
 
 @theme inline {
@@ -15,6 +38,10 @@
   --color-ink: var(--ink);
   --font-sans: var(--font-albert-sans);
   --font-mono: var(--font-fragment-mono);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html,
@@ -48,7 +75,7 @@ body {
   min-width: 320px;
   width: 100%;
   overflow: hidden;
-  touch-action: none;
+  touch-action: pan-y;
   background: var(--paper);
   color: var(--hero-ink);
 }
