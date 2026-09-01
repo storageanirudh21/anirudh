@@ -2,7 +2,7 @@
 
 import React, { useCallback, useEffect, useRef, useState } from "react";
 
-const PIGEON_TURN_VIDEO_SRC = "/images/pigeon-turn.mp4.mp4";
+const PIGEON_TURN_VIDEO_SRC = "/images/pigeon-turn.mp4";
 
 const HERO_TITLE = "Vidhara";
 const HERO_SUBTEXT = "Create. Connect. Grow.";
