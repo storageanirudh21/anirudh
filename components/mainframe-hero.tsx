@@ -269,6 +269,22 @@ export default function MainframeHero({ embedded = false }: MainframeHeroProps) 
           </p>
         </div>
       </main>
+
+      {/* Credit footer (bottom, z-index: 10) */}
+      <div
+        className={`${
+          embedded ? "absolute" : "fixed"
+        } bottom-0 left-0 right-0 z-10 w-full px-5 sm:px-8 py-4 sm:py-5 text-center pointer-events-none`}
+      >
+        <a
+          href="https://rdfad.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[12px] sm:text-[13px] text-black/60 hover:text-black transition-colors pointer-events-auto"
+        >
+          Designed and developed by RDF
+        </a>
+      </div>
     </div>
   );
 }
